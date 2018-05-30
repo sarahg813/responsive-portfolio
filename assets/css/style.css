@@ -4,7 +4,7 @@ body {
     background-image: url("../images/pink_rice.png");
 }
 
-h1, h2 {
+#heading span, h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -20,7 +20,7 @@ header {
     margin: auto;
 }
 
-h1 {
+#heading span {
     background-color: #4aaaa5;
     color: #ffffff;
     float: left;
@@ -68,7 +68,8 @@ main {
 .header-main {
     padding: 30px;
 }
-#heading2 h2 {
+
+#heading2 h1 {
     color: #4aaaa5;
     font-size: 22px;
     font-weight: bolder;
@@ -80,7 +81,7 @@ main {
 }
 /* End Main Div */
 
-/* Portfolio Content*/
+/* Amout Content*/
 #about-me-info {
     margin-top: 20px;
 }
@@ -94,7 +95,7 @@ main {
     font-size: 15px;
     line-height: 27px;
 }
-/* End Portfolio */
+/* End About */
 
 /* Footer */
 footer {
@@ -176,3 +177,64 @@ table img:hover {
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 /* End Portfolio */
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav {
+        width: 725px;
+        margin: auto;
+    }
+
+    main {
+        width: 725px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header-nav {
+        width: 640px;
+        padding: 0;
+    }
+
+    #heading span {
+        
+        width: 640px;
+        text-align: center;
+        padding: 15px 0 15px 0;
+    }
+
+    #nav {
+        text-align: center;
+        background-color: white;
+        width: 640px;
+        margin-bottom: 15px;
+    }
+
+    main {
+        width: 575px;
+    }
+
+    #profile-picture {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td {
+        display: block;
+        align-items: center;
+        padding: 0 0 15px 0;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
